@@ -5,8 +5,10 @@ body{
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
     background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-size: contain;
 }
-
 .container{
     height:100vh;
     margin: 0 auto;
@@ -16,73 +18,72 @@ body{
     align-items: center;
     width: 100%;
 }
-
 .main{
-    border: 1px solid hsl(225, 100%, 94%);
     width: 30%;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 20px 500px hsl(224, 23%, 55%);
 }
-
 .img-topo{
     width: 100%;
     border-radius: 18px 18px 0 0;
 }
-
 .container-topo{
     text-align: center;
+    margin-bottom: 50px;
 }
-
-.container-topo h1 {
+.container-topo h1{
     margin-top: 30px;
     font-weight: bold;
+    
 }
-
 .container-topo p{
     margin: 0 auto;
     text-overflow: ellipsis;
     width: 70%;
     font-size: 16px;
     font-weight: normal;
+    color: gray;
 }
-
 .container-plans{
-    padding-bottom: 20px;
-    margin: 40px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    height: 100px;
+    max-width: 70%;
+    border-radius: 5px;
 }
-
 .annual{
     margin-left: 20px;
     margin-right: 90px;
 }
-
 .annual p{
     margin:0;
+    color: gray;
 }
 span{
     font-weight: bold;
+    color: black;
 }
-
 .container-btn{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
-
 button{
     cursor: pointer;
     width: 80%;
     height: 50px;
-    border: 1px solid black;
+    border: none;
     background-color: hsl(245, 79%, 50%);
     border-radius: 10px;
     color: white;
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 20px 5px hsl(225, 100%, 98%);
     font-size: 16px;
+    font-weight: bold;
 }
-
 .container-cancel{
     margin-top: 40px;
     padding-bottom: 40px;
@@ -93,9 +94,20 @@ button{
     color:hsl(223, 47%, 23%);
     font-size:16px;
 }
+.plan-change {
+    color: hsl(245, 75%, 52%);
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 .change a:hover{
     color: hsl(245, 82%,68%);
 }
 button:hover{
     background-color: hsl(245, 82%,68%);
 }
+
+
